@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import {APP_CONFIG, APP_SERVICE_CONFIG} from "./app-config.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,9 +24,13 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_SERVICE_CONFIG,
+    useValue: APP_CONFIG,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

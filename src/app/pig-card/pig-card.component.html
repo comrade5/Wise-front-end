@@ -1,1 +1,79 @@
-<p>pig-card works!</p>
+<ngb-carousel class="win rounded py-5" *ngIf="1">
+  <ng-template *ngFor="let pigBank of pigBanks" ngbSlide>
+    <div class="picsum-img-wrapper">
+      <div class="card my-auto mx-auto" style="width: 18rem;">
+        <div class="container back">
+          <div class="pig d-flex flex-column align-items-center justify-content-center">
+            <img class="w-50" src="./assets/pig.png" alt="">
+            <ngb-progressbar type="info" [value]="50">Copying file <b>2 of 4</b>...</ngb-progressbar>
+
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center mt-5">{{pigBank.category}} piggy</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+
+      <div class="picsum-img-wrapper">
+        <div class="card my-auto mx-auto" style="width: 18rem;">
+          <div class="container back">
+            <div class="pig d-flex align-items-center justify-content-center">
+              <img class="w-50" src="./assets/pig.png" alt="">
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+
+      <div class="picsum-img-wrapper">
+        <div class="card my-auto mx-auto" style="width: 18rem;">
+          <div class="container back">
+            <div class="pig d-flex align-items-center justify-content-center">
+              <img class="w-50" src="./assets/pig.png" alt="">
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

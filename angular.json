@@ -69,7 +69,8 @@
               "browserTarget": "WiseFrontEnd:build:production"
             },
             "development": {
-              "browserTarget": "WiseFrontEnd:build:development"
+              "browserTarget": "WiseFrontEnd:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
