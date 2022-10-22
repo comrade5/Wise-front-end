@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PigCardService} from "./pig-card/service/pig-card.service";
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
   title = 'WiseFrontEnd';
   images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }

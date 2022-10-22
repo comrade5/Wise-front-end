@@ -8,6 +8,8 @@ import { PigSettingsComponent } from './pig-settings/pig-settings.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {APP_CONFIG, APP_SERVICE_CONFIG} from "./app-config.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,9 +22,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_SERVICE_CONFIG,
+    useValue: APP_CONFIG,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
