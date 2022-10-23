@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import {APP_CONFIG, APP_SERVICE_CONFIG} from "./app-config.service";
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
+import { SendMoneyFormComponent } from './send-money-form/send-money-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     NavigationBarComponent,
     PigSettingsComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    SendMoneyFormComponent
   ],
   imports: [
     BrowserModule,

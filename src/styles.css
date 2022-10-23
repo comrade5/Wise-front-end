@@ -2,3 +2,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+
+root {
+  background-color: #f1f2f0;
+}
