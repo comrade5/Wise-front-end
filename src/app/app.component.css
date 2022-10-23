@@ -1,24 +1,7 @@
-.back {
-  width: 270px;
-  height: 200px;
 
-  background: #485CC7;
-  border-radius: 24px;
-}
-
-.mobile {
-  /* remember to set a width */
-  width: 300px;
-  height: 600px;
-  background-color: azure;
-  margin-right: auto !important;
-  margin-left: auto !important;
-}
 
 .main {
-  background-color: #485CC7;
+  background-color: #f1f2f0;
 }
 
-.pig {
-  height: 200px;
-}
+

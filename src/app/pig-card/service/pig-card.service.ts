@@ -4,6 +4,8 @@ import {APP_SERVICE_CONFIG} from "../../app-config.service";
 import {AppConfig} from "../../appconfig.interface";
 import {PigBankModel} from "../pig";
 import {map, Observable} from "rxjs";
+import {PigSettings} from "../../pig-settings/settings-model";
+import {PigSettingsComponent} from "../../pig-settings/pig-settings.component";
 
 export interface PiggyBank {
   piggy_banks: Array<PigBankModel>;
@@ -22,5 +24,9 @@ export class PigCardService {
 
   getPigBanks() : Observable<PiggyBank> {
     return this.http.get<PiggyBank>(this.config.apiEndpoint+'/piggy_bank/?user=1');
+  }
+
+  savePigBank(body: PigSettings) {
+    return this.http.post(this.config.apiEndpoint+'/piggy_bank/', body);
   }
 }

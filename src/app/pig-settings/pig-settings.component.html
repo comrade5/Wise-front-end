@@ -2,9 +2,9 @@
 
 <form (ngSubmit)="onSubmit()">
     <div class="form-group" >
-        <label for="type">TYPE</label>
+        <label>TYPE</label>
         <select class="form-control" id="power" name="type" required [(ngModel)]="model.type">
-            <option *ngFor="let type of types" [value]="type">{{type}}</option>
+            <option *ngFor="let type of types, let ind=index" [value]="type">{{type}}</option>
         </select>
         <label>Budget Limit</label>
         <input type="text" class="form-control" id="budgetLimit" required [(ngModel)]="model.budgetLimit"
